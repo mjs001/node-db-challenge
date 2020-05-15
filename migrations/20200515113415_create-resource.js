@@ -2,8 +2,8 @@ exports.up = function (knex) {
   return knex.schema
     .createTable("project", (tbl) => {
       tbl.increments();
-      tbl.text("project_name", 128).notNullable();
-      tbl.text("project_description", 256).notNullable();
+      tbl.text("project_name", 128).notNullable().inTable("task");
+      tbl.text("project_description", 256).notNullable().inTable("task");
       tbl.boolean("completed").notNullable().defaultTo(false);
     })
     .createTable("resource", (tbl) => {

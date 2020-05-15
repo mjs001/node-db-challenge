@@ -15,19 +15,11 @@ function getResources() {
 }
 
 function addResources(resource) {
-  return db("resource")
-    .insert(resource)
-    .then((ids) => {
-      return resource;
-    });
+  return db("resource").insert(resource);
 }
 
 function addProjects(project) {
-  return db("project")
-    .insert(project)
-    .then((ids) => {
-      return project;
-    });
+  return db("project").insert(project);
 }
 
 function getProjects() {
@@ -35,11 +27,7 @@ function getProjects() {
 }
 
 function addTasks(task) {
-  return db("task")
-    .insert(task)
-    .then((ids) => {
-      return task;
-    });
+  return db("task").insert(task);
 }
 
 function getTasks() {

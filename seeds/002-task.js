@@ -6,6 +6,8 @@ exports.seed = function (knex) {
       task_notes: "na",
       completed: true,
       project_id: 1,
+      project_name: "project get chairs and desks",
+      project_description: "need to get chairs and desks",
     },
     {
       task_id: 2,
@@ -13,6 +15,8 @@ exports.seed = function (knex) {
       task_notes: "want some black desks",
       completed: false,
       project_id: 1,
+      project_name: "project get chairs and desks",
+      project_description: "need to get chairs and desks",
     },
     {
       task_id: 3,
@@ -20,6 +24,8 @@ exports.seed = function (knex) {
       task_notes: "would like a paisley one",
       completed: false,
       project_id: 2,
+      project_name: "project get mat",
+      project_description: "need to get a mat",
     },
   ]);
 };
